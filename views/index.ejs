@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+    <%- include('partials/head.ejs')%>
+<body>
+    <%- include('partials/header.ejs')%>
+    <main>
+        <% if (success) { %>
+        <div class="container">
+            <div class="alert alert-success" role="alert">
+                <%= success%>
+            </div>
+        </div>
+        <% } %>
+        <% if (message) { %>
+        <div class="container">
+            <div class="alert alert-danger" role="alert">
+                <%= message%>
+            </div>
+        </div>
+        <% } %>
+        <% if (error){%>
+        <div class="container">
+            <div class="alert alert-danger" role="alert">
+                <%= error%>
+            </div>
+        </div>
+        <% }%>
+        <% if(currentPage) { %>
+            <%- include(currentPage);%>
+        <% } %>
+    </main>
+
+    <%- include('partials/footer')%>
+
+</body>
+</html>
