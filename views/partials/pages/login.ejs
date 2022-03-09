@@ -1,0 +1,25 @@
+<link rel="stylesheet" href="/css/login.css">
+<div class="wrapper fadeInDown">
+    <div id="formContent">
+        <!-- Tabs Titles -->
+
+        <!-- Icon -->
+        <div class="fadeIn first">
+            <img src="/img/userdefault.svg" id="icon" alt="User Icon" />
+        </div>
+
+        <!-- Login Form -->
+        <form action="/account/checkUser" method="post" >
+            <input type="text" id="email" class="fadeIn second" name="email" placeholder="login"
+                   pattern="[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?" required>
+            <input type="password" id="password" class="fadeIn third" name="password" placeholder="password" required>
+            <input type="submit" class="fadeIn fourth" value="Log In">
+        </form>
+
+        <!-- Remind Passowrd -->
+        <div id="formFooter">
+            <a class="underlineHover" href="/account/recovery.html">Forgot Password?</a>
+        </div>
+
+    </div>
+</div>

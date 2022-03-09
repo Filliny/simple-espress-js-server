@@ -1,0 +1,27 @@
+<link rel="stylesheet" href="/css/login.css">
+<div class="wrapper fadeInDown">
+    <div id="formContent">
+        <!-- Tabs Titles -->
+
+        <!-- Icon -->
+        <div class="fadeIn first">
+            <img src="/img/userdefault.svg" id="icon" alt="User Icon" />
+        </div>
+
+        <!-- Signin Form -->
+        <form action="/account/register" method="post" >
+            <input type="text" id="firstname" class="fadeIn second" name="firstname" placeholder="first name" minlength="2" required>
+            <input type="text" id="lastname" class="fadeIn second" name="lastname" placeholder="last name" minlength="2" required>
+            <input type="text" id="email" class="fadeIn second" name="email" placeholder="email"
+                   pattern="[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?" required>
+            <input type="text" id="password" class="fadeIn third" name="password" placeholder="password" minlength="8" required>
+            <input type="submit" class="fadeIn fourth" value="Register">
+        </form>
+
+        <!-- Already Registered -->
+        <div id="formFooter">
+            <a class="underlineHover" href="/account/login.html">Already Registered ?</a>
+        </div>
+
+    </div>
+</div>
